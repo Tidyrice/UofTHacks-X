@@ -1,20 +1,21 @@
 import { startTransition, useCallback, useEffect, useRef, useState } from "react";
-import { StyleSheet, Pressable, Text } from "react-native";
+import { View, StyleSheet, Pressable, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function TimerScreen(navigation) {
-
 
     const [time, setTime] = useState(0);
     const [isRunning, setRunning] = useState(false);
     const [results, setResults] = useState(false);
     const timer = useRef(null);
 
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
+
     const RightButtonPress = useCallback(() => {
         if (!isRunning) { //start
             const interval = setInterval(() => {
                 setTime((previousTime) => previousTime + 1);
-                console.log(time);
             }, 1000);
 
             timer.current = interval;
@@ -25,31 +26,64 @@ export default function TimerScreen(navigation) {
             setRunning(false);
         }
     }, [isRunning, time]);
+
+    //convert seconds to minutes and seconds (pretty formatting)
+    const UpdateTime = useEffect(() => {
+        if (minutes < 9 || minutes == 59) {
+            setMinutes("0" + Math.floor(time / 60));
+        } else {
+            setMinutes(Math.floor(time / 60));
+        }
+
+        if (seconds < 9 || seconds == 59) {
+            setSeconds("0" + time % 60)
+        } else {
+            setSeconds(time % 60)
+        }
+    }, [time]);
     
 
     return (
         <SafeAreaView style = {styles.view}>
 
             <Text style = {styles.text}>
-                {time}
+                {minutes + ":" + seconds}
             </Text>
 
-            <Pressable
-                onPress = {() => {
-                    RightButtonPress();
-                }}
-                style = {({pressed}) => [
-                    {
-                        opacity: pressed ? 0.3 : 1,
-                    },
-                    styles.pressable,
-                ]}
-            >
+            <View style = {styles.buttonContainer}>
+                <Pressable
+                    disabled = {true}
+                    onPress = {() => { //reset (BUTTON SHOULD NOT BE ACTIVE WHEN TIME IS 00:00
 
-                <Text style = {styles.pressableText}>
-                    Start Timer!
-                </Text>
-            </Pressable>
+                    }}
+                    style = {({pressed}) => [ //MAKE BUTTON DIM IF DISABLED???!?!??!!
+                        {
+                            opacity: pressed ? 0.3 : 1,
+                        },
+                        styles.pressable,
+                    ]}
+                >
+                    <Text style = {styles.pressableText}>
+                        Reset
+                    </Text>
+                </Pressable>
+
+                <Pressable
+                    onPress = {() => { //start/stop
+                        RightButtonPress();
+                    }}
+                    style = {({pressed}) => [
+                        {
+                            opacity: pressed ? 0.3 : 1,
+                        },
+                        styles.pressable,
+                    ]}
+                >
+                    <Text style = {styles.pressableText}>
+                        Start Timer!
+                    </Text>
+                </Pressable>
+            </View>
 
         </SafeAreaView>
     );
@@ -61,19 +95,24 @@ const styles = StyleSheet.create({
     },
     text: {
         fontWeight: "bold",
-        fontSize: 32,
+        fontSize: 48,
         padding: 8,
+    },
+    buttonContainer: {
+        flexDirection: "row",
     },
     pressable: {
         borderColor: "black",
         borderWidth: 4,
         padding: 8,
+        margin: 8,
     },
     pressablePressed: {
         
     },
     pressableText: {
         fontWeight: "bold",
-        fontSize: 48,
+        fontSize: 28,
+        alignSelf: "center",
     },
 });
