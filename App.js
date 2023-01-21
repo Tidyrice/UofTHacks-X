@@ -11,6 +11,7 @@ import AnalyticsStackScreen from './Screens/AnalyticsScreen';
 const nav = createNativeStackNavigator();
 
 export default function App() {
+  
   return (
     <NavigationContainer>
       <nav.Navigator initialRouteName = "TimerScreen">
