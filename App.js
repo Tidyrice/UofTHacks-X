@@ -33,7 +33,7 @@ export default function App() {
           }}
         />
 
-        <tab.Screen name = "MapViewScreen"
+        <Tab.Screen name = "MapViewScreen"
           component = {MapViewScreen}
           options = {{
             title: "Map"
