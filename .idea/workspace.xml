@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c453611a-1c83-4bea-8cca-6b88faa30d9f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/atob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/atob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/browserslist-lint" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist-lint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/envinfo" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/envinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/excpretty" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/excpretty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/expo" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/expo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/expo-internal" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/expo-internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/expo-modules-autolinking" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/expo-modules-autolinking" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/image-size" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/image-size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/is-docker" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/is-docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jscodeshift" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jscodeshift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/logkitty" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/logkitty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/loose-envify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/md5-file" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/md5-file" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/metro" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/metro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/metro-inspector-proxy" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/metro-inspector-proxy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/metro-symbolicate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/metro-symbolicate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ncp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/ncp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/qrcode-terminal" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/qrcode-terminal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/react-native" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/react-native" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/regjsparser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/regjsparser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sucrase" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sucrase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sucrase-node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sucrase-node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/bunyan/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/bunyan/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/config-plugins/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/config-plugins/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/config-plugins/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/config-plugins/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/config/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/config/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/config/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/config/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/dev-server/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/dev-server/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/image-utils/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/image-utils/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/metro-config/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/metro-config/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/package-manager/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/package-manager/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/package-manager/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/package-manager/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/prebuild-config/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/prebuild-config/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/prebuild-config/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/prebuild-config/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/rudder-sdk-node/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/rudder-sdk-node/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@expo/xcpretty/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/xcpretty/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@npmcli/fs/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@npmcli/fs/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@npmcli/move-file/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@npmcli/move-file/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@npmcli/move-file/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@npmcli/move-file/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cacache/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cacache/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cacache/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cacache/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/del/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/del/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/find-babel-config/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/find-babel-config/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jscodeshift/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jscodeshift/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mv/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mv/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/npm-package-arg/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/npm-package-arg/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regjsparser/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regjsparser/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tar/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tar/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/temp/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/temp/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xcode/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xcode/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KdbNx1cRRYjM28676S4j3h62nM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/richardmiao/UofTHacks-X"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c453611a-1c83-4bea-8cca-6b88faa30d9f" name="Changes" comment="" />
+      <created>1674307371776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674307371776</updated>
+    </task>
+    <servers />
+  </component>
+</project>
