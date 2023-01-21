@@ -9,11 +9,17 @@ export default function MapViewScreen(navigation) {
     return (
         <SafeAreaView style={ styles.container }>
             <MapView style={ styles.map }>
- 
-                <Marker coordinate={{ latitude : 43.66092400242462, longitude : -79.3951897865203}}>
-                    <Image source={require("./marker.png")} style={{width: 10, height: 10}} />
-                </Marker>
 
+                {/* location: uoft convocation hall */}
+                <Marker coordinate={{ latitude : 43.66092400242462, longitude : -79.3951897865203}}>
+                    <Image source={require("./marker.png")} style={ styles.washroomLocations } />
+                </Marker>
+                 
+                 {/* location: uwaterloo */}
+                <Marker coordinate={{ latitude : 43.4724294198448, longitude : -80.54487905981661}}>
+                    <Image source={require("./marker.png")} style={ styles.washroomLocations } />
+                </Marker>
+                
             </MapView>
         </SafeAreaView>
         
@@ -29,4 +35,8 @@ const styles = StyleSheet.create({
       width: '100%',
       height: '100%',
     },
+    washroomLocations: {
+        width: 10,
+        height: 10
+    }
   });
