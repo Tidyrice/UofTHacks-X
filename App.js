@@ -9,29 +9,29 @@ import TimerStackScreen from './Screens/TimerScreen';
 import AnalyticsStackScreen from './Screens/AnalyticsScreen';
 
 //navigator
-const tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   
   return (
     <NavigationContainer>
-      <tab.Navigator initialRouteName = "TimerScreen">
+      <Tab.Navigator initialRouteName = "TimerScreen">
 
-        <tab.Screen name = "TimerScreen"
+        <Tab.Screen name = "TimerScreen"
           component = {TimerStackScreen}
           options = {{
             title: "Timer",
           }}
         />
 
-        <tab.Screen name = "AnalyticsScreen"
+        <Tab.Screen name = "AnalyticsScreen"
           component = {AnalyticsStackScreen}
           options = {{
             title: "Analytics",
           }}
         />
 
-      </tab.Navigator>
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
