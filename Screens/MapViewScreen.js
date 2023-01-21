@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import MapView from 'react-native-maps';
 import { Marker } from 'react-native-maps';
 import './marker.png';
+import './userLocation.png';
 import { GetCurrentPosition } from '../Scripts/location';
 
 export default function MapViewScreen(navigation) {
@@ -25,7 +26,7 @@ export default function MapViewScreen(navigation) {
 
                 {/* location: user */}
                 <Marker coordinate={{ latitude: latitude, longitude : longitude}}>
-                    <Image source={require("./marker.png")} style={ styles.userLocation } />
+                    <Image source={require("./userLocation.png")} style={ styles.userLocation } />
                 </Marker>
                 {/* location: uoft convocation hall */}
                 <Marker coordinate={{ latitude : 43.66092400242462, longitude : -79.3951897865203}}>
