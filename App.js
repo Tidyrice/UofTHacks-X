@@ -14,6 +14,8 @@ import MapViewScreen from './Screens/MapViewScreen.js'
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+
+  Permissions.
   
   return (
     <NavigationContainer>

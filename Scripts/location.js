@@ -1,7 +1,5 @@
-export function GetCurrentPosition() {
+import * as Location from 'expo-location';
 
-}
-
-export function NearestWashrooms() {
-
+export async function GetCurrentPosition() { //returns a location object
+    return await Location.getCurrentPositionAsync({});
 }
