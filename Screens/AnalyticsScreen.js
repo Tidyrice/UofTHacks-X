@@ -1,4 +1,4 @@
-export default function AnalyticsScreen() {
+export default function AnalyticsScreen(navigation) {
     return (
         <Text>ANALYTICS SCREEN</Text>
     );
