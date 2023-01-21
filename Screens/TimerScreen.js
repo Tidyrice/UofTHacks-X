@@ -6,7 +6,6 @@ export default function TimerScreen(navigation) {
 
     const [time, setTime] = useState(0);
     const [isRunning, setRunning] = useState(false);
-    const [results, setResults] = useState(false);
     const timer = useRef(null);
 
     const [minutes, setMinutes] = useState(0);
@@ -52,9 +51,13 @@ export default function TimerScreen(navigation) {
 
             <View style = {styles.buttonContainer}>
                 <Pressable
-                    disabled = {true}
-                    onPress = {() => { //reset (BUTTON SHOULD NOT BE ACTIVE WHEN TIME IS 00:00
-
+                    disabled = {time ? false : true}
+                    onPress = {() => { //reset (BUTTON SHOULD NOT BE ACTIVE WHEN TIME IS 00:00)
+                        clearInterval(timer.current);
+                        setRunning(0);
+                        setTime(0);
+                        setMinutes(0);
+                        setSeconds(0);
                     }}
                     style = {({pressed}) => [ //MAKE BUTTON DIM IF DISABLED???!?!??!!
                         {
@@ -80,7 +83,7 @@ export default function TimerScreen(navigation) {
                     ]}
                 >
                     <Text style = {styles.pressableText}>
-                        Start Timer!
+                        {isRunning ? "Stop Timer" : "Start Timer"}
                     </Text>
                 </Pressable>
             </View>

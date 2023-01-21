@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import * as Location from 'expo-location';
 
 //API key
 
@@ -15,6 +16,8 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   
+  Location.requestForegroundPermissionsAsync();
+
   return (
     <NavigationContainer>
       <Tab.Navigator initialRouteName = "TimerScreen">

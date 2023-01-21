@@ -18,8 +18,7 @@ export default function MapViewScreen(navigation) {
             setLatitude(data.coords.latitude);
         }, [])
     })
-    //43.660816376640064, -79.39662293097538
-    
+
     return (
         <SafeAreaView style={ styles.container }>
             <MapView style={ styles.map }>
