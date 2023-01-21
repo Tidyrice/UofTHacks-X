@@ -1,3 +1,7 @@
-export function getCurrentPosition() {
+export function GetCurrentPosition() {
+
+}
+
+export function NearestWashrooms() {
 
 }

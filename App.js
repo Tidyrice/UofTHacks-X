@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import "./App.css";
 
 //import screen
@@ -9,29 +9,29 @@ import TimerStackScreen from './Screens/TimerScreen';
 import AnalyticsStackScreen from './Screens/AnalyticsScreen';
 
 //navigator
-const nav = createNativeStackNavigator();
+const tab = createBottomTabNavigator();
 
 export default function App() {
   
   return (
     <NavigationContainer>
-      <nav.Navigator initialRouteName = "TimerScreen">
+      <tab.Navigator initialRouteName = "TimerScreen">
 
-        <nav.Screen name = "TimerScreen"
+        <tab.Screen name = "TimerScreen"
           component = {TimerStackScreen}
           options = {{
             title: "Timer",
           }}
         />
 
-        <nav.Screen name = "AnalyticsScreen"
+        <tab.Screen name = "AnalyticsScreen"
           component = {AnalyticsStackScreen}
           options = {{
             title: "Analytics",
           }}
         />
 
-      </nav.Navigator>
+      </tab.Navigator>
     </NavigationContainer>
   );
 }
