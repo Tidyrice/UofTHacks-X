@@ -15,6 +15,8 @@ export default function TimerScreen({navigation}) {
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
+    const [gender, setGender] = useState("female");
+
     const RightButtonPress = useCallback(() => {
         if (!isRunning) { //start
             const interval = setInterval(() => {
@@ -111,6 +113,52 @@ export default function TimerScreen({navigation}) {
                 </Pressable>
             </View>
 
+            <View>
+                <Text>Washroom:</Text>
+
+                <Pressable
+                    onPress = {() => { //female
+                        setGender("female");
+                    }}
+                    style = {({pressed}) => [
+                        {
+                            opacity: pressed ? 0.4 : 1,
+                        },
+                        styles.genderPressable
+                    ]}
+                >
+                    <Text style = {styles.genderPressableText}>Female</Text>
+                </Pressable>
+
+                <Pressable
+                    onPress = {() => { //male
+                        setGender("male");
+                    }}
+                    style = {({pressed}) => [
+                        {
+                            opacity: pressed ? 0.4 : 1,
+                        },
+                        styles.genderPressable
+                    ]}
+                >
+                    <Text style = {styles.genderPressableText}>Male</Text>
+                </Pressable>
+
+                <Pressable
+                    onPress = {() => { //male
+                        setGender("other");
+                    }}
+                    style = {({pressed}) => [
+                        {
+                            opacity: pressed ? 0.4 : 1,
+                        },
+                        styles.genderPressable
+                    ]}
+                >
+                    <Text style = {styles.genderPressableText}>Other</Text>
+                </Pressable>
+            </View>
+
         </SafeAreaView>
     );
 }
@@ -155,4 +203,14 @@ const styles = StyleSheet.create({
         fontSize: 28,
         alignSelf: "center",
     },
+    genderPressable: {
+        borderColor: "grey",
+        borderWidth: 2,
+        padding: 12,
+        margin: 8,
+    },
+    genderPressableText: {
+        fontSize: 18,
+        alignSelf: "center"
+    }
 });
