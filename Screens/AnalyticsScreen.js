@@ -1,19 +1,31 @@
-import React, { Component } from 'react';
-import * as d3 from 'd3';
-import PChart from 'Scripts/pieChart.js';
-import PieChart from '../Scripts/pieChart';
+import PieChart from 'react-native-expo-pie-chart'
 
-
-export default function AnalyticsScreen(navigation) {
-    const sampleData = [{ label: 'Apples', value: 10 }, { label: 'Oranges', value: 20 }];
-
+export default function AnalyticsScreen() {
     return (
-        <PChart {
-            ...data = sampleData,
-            outerRadius = 50,
-            innerRadius = 50
-        }>
-
-        </PChart>
+      <PieChart
+      data={[
+      {
+          key: 'First Data',
+          count: 20,
+          color: 'blue',
+      },
+      {
+          key: 'Second Data',
+          count: 25,
+          color: 'yellow',
+      },
+      {
+          key: 'Third Data',
+          count: 40,
+          color: 'green',
+      },
+      {
+          key: 'Forth Data',
+          count: 35,
+          color: 'orange',
+      },
+      ]}
+      length={200}
+  />
     );
 }

@@ -1,8 +1,12 @@
 import { startTransition, useCallback, useEffect, useRef, useState } from "react";
 import { View, StyleSheet, Pressable, Text, Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { LoadData } from "../SaveSystem/SaveSystem";
 
 export default function TimerScreen({navigation}) {
+
+    //DATA
+    const [data, setData] = useState(null);
 
     const [time, setTime] = useState(0);
     const [isRunning, setRunning] = useState(false);
@@ -45,12 +49,12 @@ export default function TimerScreen({navigation}) {
 
     //load data from database
     useEffect(() => {
-        LoadMonthAsync(route.params.year, route.params.month)
+        LoadData()
         .then(data => {
-            setMonthData(data); //load data
+            setData(data); //load data
         });
     }, []);
-    
+
     //navigation bar
     useEffect (() => {
         navigation.setOptions({

@@ -1,3 +1,4 @@
+import { View } from 'react-native';
 import React, { useEffect } from 'react';
 import * as d3 from 'd3';
 
@@ -69,5 +70,7 @@ export default function PieChart(props) {
   }    
 
 
-  return <div id="pie-container" />;
+  return (
+   <View id="pie-container" />
+  );
 }
