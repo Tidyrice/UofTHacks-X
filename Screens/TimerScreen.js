@@ -1,8 +1,8 @@
 import { startTransition, useCallback, useEffect, useRef, useState } from "react";
-import { View, StyleSheet, Pressable, Text } from "react-native";
+import { View, StyleSheet, Pressable, Text, Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function TimerScreen(navigation) {
+export default function TimerScreen({navigation}) {
 
     const [time, setTime] = useState(0);
     const [isRunning, setRunning] = useState(false);
@@ -20,9 +20,10 @@ export default function TimerScreen(navigation) {
             timer.current = interval;
             setRunning(true);
 
-        } else { //pause
+        } else { //SUBMIT
             clearInterval(timer.current);
             setRunning(false);
+            //SUBMIT
         }
     }, [isRunning, time]);
 
@@ -40,16 +41,25 @@ export default function TimerScreen(navigation) {
             setSeconds(time % 60)
         }
     }, [time]);
+
+    //navigation bar
+    useEffect (() => {
+        navigation.setOptions({
+            title: "Piss't Off",
+        });
+    }, [])
     
 
     return (
         <SafeAreaView style = {styles.view}>
 
-            <Text style = {styles.text}>
-                {minutes + ":" + seconds}
-            </Text>
+            <View style = {styles.timerContainer}>
+                <Text style = {styles.timerText}>
+                    {minutes + ":" + seconds}
+                </Text>
+            </View>
 
-            <View style = {styles.buttonContainer}>
+            <View style = {styles.pressableContainer}>
                 <Pressable
                     disabled = {time ? false : true}
                     onPress = {() => { //reset (BUTTON SHOULD NOT BE ACTIVE WHEN TIME IS 00:00)
@@ -61,7 +71,7 @@ export default function TimerScreen(navigation) {
                     }}
                     style = {({pressed}) => [ //MAKE BUTTON DIM IF DISABLED???!?!??!!
                         {
-                            opacity: pressed ? 0.3 : 1,
+                            opacity: pressed ? 0.4 : 1,
                         },
                         styles.pressable,
                     ]}
@@ -72,18 +82,18 @@ export default function TimerScreen(navigation) {
                 </Pressable>
 
                 <Pressable
-                    onPress = {() => { //start/stop
+                    onPress = {() => {
                         RightButtonPress();
                     }}
                     style = {({pressed}) => [
                         {
-                            opacity: pressed ? 0.3 : 1,
+                            opacity: pressed ? 0.4 : 1,
                         },
-                        styles.pressable,
+                        styles.tapIn
                     ]}
                 >
                     <Text style = {styles.pressableText}>
-                        {isRunning ? "Stop Timer" : "Start Timer"}
+                        {isRunning ? "Tap out" : "Tap in"}
                     </Text>
                 </Pressable>
             </View>
@@ -94,24 +104,38 @@ export default function TimerScreen(navigation) {
 
 const styles = StyleSheet.create({
     view: {
+        flex: 1,
         alignItems: "center",
+        backgroundColor: "#FFDDDD",
     },
-    text: {
+    timerContainer: {
+        alignContent: "center",
+        borderColor: "black",
+        borderWidth: 4,
+        backgroundColor: "white",
+        padding: 20,
+        margin: 20,
+    },
+    timerText: {
         fontWeight: "bold",
-        fontSize: 48,
-        padding: 8,
+        fontSize: 100,
     },
-    buttonContainer: {
+    pressableContainer: {
         flexDirection: "row",
     },
     pressable: {
         borderColor: "black",
         borderWidth: 4,
-        padding: 8,
+        padding: 12,
         margin: 8,
+        backgroundColor: "#DFDFDF",
     },
-    pressablePressed: {
-        
+    tapIn: {
+        borderColour: "grey",
+        borderWidth: 4,
+        padding: 12,
+        margin: 8,
+        backgroundColor: "#AAFFBB"
     },
     pressableText: {
         fontWeight: "bold",
