@@ -9,11 +9,11 @@ export default function AnalyticsScreen(navigation) {
 
     return (
         <PChart {
-            ...data = "sampleData",
+            ...data = sampleData,
             outerRadius = 50,
             innerRadius = 50
         }>
-                   
+
         </PChart>
     );
 }
