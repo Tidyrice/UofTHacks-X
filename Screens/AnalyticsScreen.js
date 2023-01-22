@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import * as d3 from 'd3';
 import {StyleSheet, ScrollView} from 'react-native';
 import PieChart from "react-native-d3-charts";
 
 
-export default class App extends Component {
+class Graph extends Component {
     state={
         chartData: [
               {
@@ -61,6 +60,12 @@ export default class App extends Component {
             </ScrollView>
         );
     }
+}
+
+export default function AnalyticsScreen() {
+  return(
+    <Text>HELL</Text>
+  );
 }
 
 const styles = StyleSheet.create({

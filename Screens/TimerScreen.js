@@ -24,6 +24,7 @@ export default function TimerScreen({navigation}) {
             clearInterval(timer.current);
             setRunning(false);
             //SUBMIT
+
         }
     }, [isRunning, time]);
 
@@ -42,6 +43,14 @@ export default function TimerScreen({navigation}) {
         }
     }, [time]);
 
+    //load data from database
+    useEffect(() => {
+        LoadMonthAsync(route.params.year, route.params.month)
+        .then(data => {
+            setMonthData(data); //load data
+        });
+    }, []);
+    
     //navigation bar
     useEffect (() => {
         navigation.setOptions({
