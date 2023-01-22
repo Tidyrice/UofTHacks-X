@@ -11,12 +11,12 @@ export default function AnalyticsScreen() {
           data = {[
             {
                 key: "Male",
-                count: 25,
-                color: "blue",
+                count: 32,
+                color: "lightblue",
             },
             {
                 key: "Female",
-                count: 75,
+                count: 68,
                 color: "pink",
             },
           ]}
@@ -27,14 +27,19 @@ export default function AnalyticsScreen() {
         <PieChart style = {styles.pieChart}
           data = {[
             {
-                key: "Male",
-                count: 25,
-                color: "blue",
+              key: "A",
+              count: 43,
+              color: "#AAFFBB",
             },
             {
-                key: "Female",
-                count: 50,
-                color: "pink",
+              key: "B",
+              count: 38,
+              color: "#BBAABB",
+            },
+            {
+              key: "C",
+              count: 19,
+              color: "#55AAAA"
             },
           ]}
           length={214}
@@ -47,10 +52,13 @@ export default function AnalyticsScreen() {
 const styles = StyleSheet.create({
   view: {
     flex: 1,
+    padding: 24,
   },
   label: {
     alignSelf: "center",
     fontWeight: "bold",
+    fontSize: 20,
+    marginBottom: -36,
   },
   pieChart: {
 

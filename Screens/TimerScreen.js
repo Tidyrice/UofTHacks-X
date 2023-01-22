@@ -15,7 +15,9 @@ export default function TimerScreen({navigation}) {
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
-    const [gender, setGender] = useState("female");
+    const [female, setFemale] = useState(true);
+    const [male, setMale] = useState(false);
+    const [other, setOther] = useState(false);
 
     const RightButtonPress = useCallback(() => {
         if (!isRunning) { //start
@@ -118,11 +120,14 @@ export default function TimerScreen({navigation}) {
 
                 <Pressable
                     onPress = {() => { //female
-                        setGender("female");
+                        setFemale(true);
+                        setMale(false);
+                        setOther(false);
                     }}
                     style = {({pressed}) => [
                         {
-                            opacity: pressed ? 0.4 : 0.4, //SUS CODE --!__!_!_-1__!__1--!_!!!__!_!__!_!!
+                            opacity: pressed ? 0.3 : 1,
+                            opacity: female ? 0.3 : 1,
                         },
                         styles.genderPressable
                     ]}
@@ -132,11 +137,14 @@ export default function TimerScreen({navigation}) {
 
                 <Pressable
                     onPress = {() => { //male
-                        setGender("male");
+                        setFemale(false);
+                        setMale(true);
+                        setOther(false);
                     }}
                     style = {({pressed}) => [
                         {
-                            opacity: pressed ? 0.4 : 1,
+                            opacity: pressed ? 0.3 : 1,
+                            opacity: male ? 0.3 : 1,
                         },
                         styles.genderPressable
                     ]}
@@ -146,11 +154,14 @@ export default function TimerScreen({navigation}) {
 
                 <Pressable
                     onPress = {() => { //male
-                        setGender("other");
+                        setFemale(false);
+                        setMale(false);
+                        setOther(true);
                     }}
                     style = {({pressed}) => [
                         {
-                            opacity: pressed ? 0.4 : 1,
+                            opacity: pressed ? 0.3 : 1,
+                            opacity: other ? 0.3 : 1,
                         },
                         styles.genderPressable
                     ]}

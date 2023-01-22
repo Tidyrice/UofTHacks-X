@@ -7,7 +7,7 @@ import './marker.png';
 import './userLocation.png';
 import { GetCurrentPosition } from '../Scripts/location';
 
-export default function MapViewScreen(navigation) {
+export default function MapViewScreen({navigation}) {
 
     const [longitude, setLongitude] = React.useState(43.660816376640064);
     const [latitude, setLatitude] = React.useState(-79.39662293097538);
@@ -20,8 +20,22 @@ export default function MapViewScreen(navigation) {
         }, [])
     })
 
+    //navigation bar
+    React.useEffect (() => {
+        navigation.setOptions({
+            title: "Nearby Washrooms",
+        });
+    }, [])
+
     return (
-        <MapView style={ styles.map }>
+        <MapView style={ styles.map }
+            initialRegion={{
+                latitude: 43.660816376640064,
+                longitude: -79.39662293097538,
+                latitudeDelta: 0.0001,
+                longitudeDelta: 0.0471,
+            }}
+        >
 
             {/* location: user */}
             <Marker coordinate={{ latitude: latitude, longitude : longitude}}>
@@ -29,11 +43,6 @@ export default function MapViewScreen(navigation) {
             </Marker>
             {/* location: uoft convocation hall */}
             <Marker coordinate={{ latitude : 43.66092400242462, longitude : -79.3951897865203}}>
-                <Image source={require("./marker.png")} style={ styles.washroomLocations } />
-            </Marker>
-                
-                {/* location: uwaterloo */}
-            <Marker coordinate={{ latitude : 43.4724294198448, longitude : -80.54487905981661}}>
                 <Image source={require("./marker.png")} style={ styles.washroomLocations } />
             </Marker>
             
