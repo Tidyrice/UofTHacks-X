@@ -50,17 +50,17 @@ export default function TimerScreen({navigation}) {
     }, [time]);
 
     //load data from database
-    useEffect(() => {
+    /*useEffect(() => {
         LoadData()
         .then(data => {
             setData(data); //load data
         });
-    }, []);
+    }, []);*/
 
     //navigation bar
     useEffect (() => {
         navigation.setOptions({
-            title: "Piss't Off",
+            title: "Piss'd Off",
         });
     }, [])
     
@@ -114,7 +114,7 @@ export default function TimerScreen({navigation}) {
             </View>
 
             <View>
-                <Text>Washroom:</Text>
+                <Text style = {{fontSize: 24, fontWeight: "bold"}}>Washroom:</Text>
 
                 <Pressable
                     onPress = {() => { //female
@@ -122,7 +122,7 @@ export default function TimerScreen({navigation}) {
                     }}
                     style = {({pressed}) => [
                         {
-                            opacity: pressed ? 0.4 : 1,
+                            opacity: pressed ? 0.4 : 0.4, //SUS CODE --!__!_!_-1__!__1--!_!!!__!_!__!_!!
                         },
                         styles.genderPressable
                     ]}
@@ -183,6 +183,7 @@ const styles = StyleSheet.create({
     },
     pressableContainer: {
         flexDirection: "row",
+        marginBottom: 48,
     },
     pressable: {
         borderColor: "black",
@@ -204,7 +205,7 @@ const styles = StyleSheet.create({
         alignSelf: "center",
     },
     genderPressable: {
-        borderColor: "grey",
+        borderColor: "black",
         borderWidth: 2,
         padding: 12,
         margin: 8,

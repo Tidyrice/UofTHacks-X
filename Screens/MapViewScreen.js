@@ -21,33 +21,30 @@ export default function MapViewScreen(navigation) {
     })
 
     return (
-        <SafeAreaView style={ styles.container }>
-            <MapView style={ styles.map }>
+        <MapView style={ styles.map }>
 
-                {/* location: user */}
-                <Marker coordinate={{ latitude: latitude, longitude : longitude}}>
-                    <Image source={require("./userLocation.png")} style={ styles.userLocation } />
-                </Marker>
-                {/* location: uoft convocation hall */}
-                <Marker coordinate={{ latitude : 43.66092400242462, longitude : -79.3951897865203}}>
-                    <Image source={require("./marker.png")} style={ styles.washroomLocations } />
-                </Marker>
-                 
-                 {/* location: uwaterloo */}
-                <Marker coordinate={{ latitude : 43.4724294198448, longitude : -80.54487905981661}}>
-                    <Image source={require("./marker.png")} style={ styles.washroomLocations } />
-                </Marker>
+            {/* location: user */}
+            <Marker coordinate={{ latitude: latitude, longitude : longitude}}>
+                <Image source={require("./userLocation.png")} style={ styles.userLocation } />
+            </Marker>
+            {/* location: uoft convocation hall */}
+            <Marker coordinate={{ latitude : 43.66092400242462, longitude : -79.3951897865203}}>
+                <Image source={require("./marker.png")} style={ styles.washroomLocations } />
+            </Marker>
                 
-            </MapView>
-        </SafeAreaView>
-        
+                {/* location: uwaterloo */}
+            <Marker coordinate={{ latitude : 43.4724294198448, longitude : -80.54487905981661}}>
+                <Image source={require("./marker.png")} style={ styles.washroomLocations } />
+            </Marker>
+            
+        </MapView>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
       padding: 10,
-      paddingTop: -6
+      paddingTop: -26
     },
     map: {
       width: '100%',

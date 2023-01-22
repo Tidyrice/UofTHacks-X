@@ -13,6 +13,7 @@ import MapViewScreen from './Screens/MapViewScreen.js'
 
 //navigator
 const Tab = createBottomTabNavigator();
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 export default function App() {
   
@@ -26,6 +27,9 @@ export default function App() {
           component = {TimerStackScreen}
           options = {{
             title: "Timer",
+            tabBarIcon: ({color}) => (
+              <MaterialIcons name = "timer" color = {color} size = {26} />
+            ),
           }}
         />
 
@@ -33,13 +37,19 @@ export default function App() {
           component = {AnalyticsStackScreen}
           options = {{
             title: "Analytics",
+            tabBarIcon: ({color}) => (
+              <MaterialIcons name = "analytics" color = {color} size = {26} />
+            ),
           }}
         />
 
         <Tab.Screen name = "MapViewScreen"
           component = {MapViewScreen}
           options = {{
-            title: "Map"
+            title: "Map",
+            tabBarIcon: ({color}) => (
+              <MaterialIcons name = "map" color = {color} size = {26} />
+            ),
           }}
         />
 
